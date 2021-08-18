@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="calculator">
+            <div class="display">
+                <input id="calc_display" value="0">
+            </div>
+            <div class="keys">
+                <button class="op_key key_button" onclick="clearCalc()">C</button>
+                <button class="op_key key_button" onclick="negateOp()">+/-</button>
+                <button class="op_key key_button" onclick="percentageOp()">%</button>
+                <button class="op_key key_button" value="/" onclick="printOp(this)">:</button>
+                <button class="num_key key_button" onclick="printNum(this)">7</button>
+                <button class="num_key key_button" onclick="printNum(this)">8</button>
+                <button class="num_key key_button" onclick="printNum(this)">9</button>
+                <button class="op_key key_button" value="*" onclick="printOp(this)">x</button>
+                <button class="num_key key_button" onclick="printNum(this)">4</button>
+                <button class="num_key key_button" onclick="printNum(this)">5</button>
+                <button class="num_key key_button" onclick="printNum(this)">6</button>
+                <button class="op_key key_button" value="-" onclick="printOp(this)">-</button>
+                <button class="num_key key_button" onclick="printNum(this)">3</button>
+                <button class="num_key key_button" onclick="printNum(this)">2</button>
+                <button class="num_key key_button" onclick="printNum(this)">1</button>
+                <button class="num_key key_button" value="+" onclick="printOp(this)">+</button>
+                <button class="num_key key_button" onclick="printNum(this)">0</button>
+                <button class="num_key key_button" onclick="printDec()">.</button>
+                <button class="eq_key key_button" onclick="printResult()">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="calculator.js"></script>
+</body>
+</html>
